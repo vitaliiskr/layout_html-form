@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" name="myform">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      name="myform"
+      method="POST"
+    >
       <fieldset class="form-field personal-information">
         <legend>Personal information</legend>
         <div class="form-input">
@@ -18,7 +22,7 @@
             id="surname"
             name="surname"
             type="text"
-            >
+          >
         </div>
         <div class="form-input">
           <label for="firstname">Name:</label>
@@ -34,9 +38,10 @@
             id="years"
             name="years"
             type="number"
-            min="12" max="100"
+            min="12"
+            max="100"
             value="12"
-            >
+          >
         </div>
         <div class="form-input">
           <label for="birthday">Full date of birth:</label>
@@ -64,7 +69,7 @@
             id="email"
             type="email"
             placeholder="email@example.com"
-            >
+          >
         </div>
         <div class="form-input">
           <label for="password">Password:</label>
@@ -73,7 +78,7 @@
             id="password"
             type="password"
             minlength="5"
-            >
+          >
         </div>
       </fieldset>
       <fieldset class="form-field facts-about-you">
@@ -84,7 +89,8 @@
             id="lovecats"
             type="radio"
             name="lovecats"
-          >Yes
+          >
+          Yes
           <input type="radio" name="lovecats">No
         </div>
         <div class="form-input">
@@ -109,17 +115,17 @@
             name="carsbrand"
             id="carsbrand"
             multiple
-            >
+          >
             <option value="BMV">BMV</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </div>
         <div class="form-input">
-          <label for="rateofwork">How do you rate our work?</label>
+          <label for="rate-of-work">How do you rate our work?</label>
           <input
-            name="rateofwork"
-            id="rateofwork"
+            name="rate-of-work"
+            id="rate-of-work"
             type="range"
             >
         </div>
